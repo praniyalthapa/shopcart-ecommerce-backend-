@@ -1,18 +1,17 @@
-// function pingController(req,res){
-//     return res.json({
-//           message:'hello world!'
-//     })
-// }
 
-// module.exports={
-//     pingController
-// }
 function pingController(request, response) {
     return response.json({
-        message: 'hello world!'
+        message: 'Ok from v1 routes'
+    });
+}
+
+function pingControllerv2(request,response){
+    return response.json({
+        message:'Ok from v2 routes'
     });
 }
 
 module.exports = {
-    pingController
+    pingController,
+    pingControllerv2
 };
