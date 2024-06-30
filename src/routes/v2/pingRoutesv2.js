@@ -2,9 +2,13 @@ const express = require('express');
 const {pingControllerv2}=require('../../controllers/pingcontroller');
 const router = express.Router();
 
-router.get('/version',pingControllerv2);
+router.get('/',pingControllerv2);
 
-
+router.get('/pinged',(req,res)=>{
+     res.json({
+        "hello":"this is new api from version 2"
+     })
+})
 // router.get('/account',pingController);
 
 
