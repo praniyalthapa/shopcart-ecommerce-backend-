@@ -1,5 +1,5 @@
 const express = require('express');
-const {pingControllerv2}=require('../../controllers/pingcontroller');
+const {pingControllerv2}=require('../../controllers/ping_controller');
 const router = express.Router();
 
 router.get('/',pingControllerv2);

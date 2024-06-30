@@ -1,10 +1,10 @@
 const express = require('express');
-const {PORT}=require('./config/serverConfig');
+const {PORT}=require('./config/server_config');
 
 //const {configRoutes}=require('./routes/v1/pingRoutes');
 //const pingRoutes=require('./routes/v1/pingRoutes');
 //const pingRoutesv2=require('./routes/v2/pingRoutesv2');
-const apiRouter=require('./routes/apiRouter');
+const apiRouter=require('./routes/api_router');
 const app = express();
 // app.use('/api/v1/ping',pingRoutes);
 // app.use('/api/v2/ping',pingRoutesv2);
