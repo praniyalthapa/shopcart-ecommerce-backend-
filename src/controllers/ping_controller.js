@@ -11,7 +11,9 @@ function pingControllerv2(request,response){
     });
 }
 
+
 module.exports = {
     pingController,
-    pingControllerv2
+    pingControllerv2,
+   
 };
