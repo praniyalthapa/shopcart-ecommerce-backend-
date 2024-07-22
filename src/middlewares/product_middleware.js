@@ -1,24 +1,13 @@
-// function createProductValidator(req,res,next){
-//     console.log("Error is",req);
-//   if(!req.body.title){ 
-//    return res.json({
-//     success:false,
-//     data:{},
-//     message:'Title is not found so middleware detected it',
-//     error:{
-//         message:'Required title is not found!!!'
+// const errorResponse = require("../utils/error_response");
+
+// function createProductValidator(req, res, next) {
+//     console.log("Request Body in Middleware:", req.body); // Log the request body in middleware
+
+//     if (!req.body.title) {
+//         return res.json(errorResponse('discription is not present'),{message:'description is not present'});
+            
 //     }
-//    })
-
-
-//   }
 //     next();
-//    //if our title and everything is upto dat and follow the convention or parameter then call next function
-//    //which means next means controller in routes folder as we did
-   
-
-// }
-// module.exports={
-//     createProductValidator
 // }
 
+// module.exports = createProductValidator;

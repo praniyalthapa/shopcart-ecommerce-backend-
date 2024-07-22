@@ -1,4 +1,5 @@
 
+
 function pingController(request, response) {
     console.log("Controller is hit after next of middlware first");
     return response.json({
