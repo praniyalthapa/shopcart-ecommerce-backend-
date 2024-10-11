@@ -1,3 +1,4 @@
+const errorResponse = require("../utils/error_response");
 
 
 function createProductValidator(req, res, next) {
@@ -5,15 +6,8 @@ function createProductValidator(req, res, next) {
 
     
    if (!req.body.title) {
-    // return res.json(errorResponse('discription is not present'),{message:'description is not present'});
-       return res.json({
-         success:false,
-         data:{},
-         message:'You have missed to input title parameter',
-         error:{
-             message:'Request body is missing so we gave you error!!Check it once!!Thank you!!'
-         }
-       })  
+    return res.json(errorResponse('discription is not present'),{message:'description is not present'});
+      
  }
  if (!req.body.price) {
   return res.json({

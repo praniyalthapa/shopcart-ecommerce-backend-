@@ -17,6 +17,7 @@ const router = express.Router();
 
 
 router.get('/',pingController);
+router.get('/pingingpraniyal',pingController);
 
 
 
